@@ -1,17 +1,42 @@
+%inputName{
+    width: 325px;
+    height: 22px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #b6bdb9;
+    margin-top: 10px;
+}
+%inputEmail{
+    width: 89px;
+    height: 22px;
+    font-size: 14px;
+    color: #A8A8A8;
+}
 .login{
-    width: 100%;
-    height: 1000px;
+    position: relative;
+    opacity: 0.99;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(../../img/login.jpeg);
+    width: 1440px;
+    height: 900px;
+  }
+  .login::before{
+    content: "";
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    z-index: -1;
+    background: url(../../img/login.jpeg) no-repeat 0 50%;
+    opacity: 0.6;
+    background-size: 100%;
 }
-
 .login-main{
     display: flex;
     width: 910px;
     height: 570px;
-    background-color: rgb(245, 237, 237);
+    background-color: white;
+    border-radius: 8px;
 }
 .login-left{
     width: 455px;
@@ -21,9 +46,63 @@
     align-items: center;
     justify-content: center;
     font-size: 40px;
-    
 }
 .login-right_top{
     margin-top: 70px;
-    font-size: 40px;
+    font-size: 24px;
+    width: 200px;
+    height: 32px;
+    color: #030F09;
+    font-weight: 600;
+}
+.login-right{
+    margin-left: 50px;
+    p{
+        width: 200px;
+        height: 22px;
+        font-size: 14px;
+        color: #606060;
+    }
+}
+.input{
+    margin-top: 75px;
+}
+.input-email{
+    @extend %inputEmail;
+}
+.input-name{
+    @extend %inputName;
+}
+.input-w{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.input-password{
+    @extend %inputEmail;
+}
+.input-forgot{
+    width: 113px;
+    height: 22px;
+    font-size: 14px;
+    color: #A8A8A8;
+    cursor: pointer;
+}
+.button-input{
+    width: 325px;
+    height: 50px;
+    background-color: #30BE76;
+    border-radius: 8px;
+    margin: 50px 0px 30px 0px;
+    border: none;
+    color: white;
+}
+.login-new{
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #A8A8A8;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    cursor: pointer;
 }
