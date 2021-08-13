@@ -1,0 +1,54 @@
+
+.singUp{
+    @extend %login;
+  }
+  .singUp::before{
+    content: "";
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    z-index: -1;
+    background: url(../../img/login.jpeg) no-repeat 0 50%;
+    opacity: 0.6;
+    background-size: 100%;
+}
+.singUp-main{
+    @extend %loginMain;
+}
+.singUp-left{
+    @extend %loginLeft;
+}
+.singUp-right_top{
+    @extend %loginRightTop;
+}
+.singUp-right{
+    margin-left: 50px;
+    p{
+        width: 200px;
+        height: 22px;
+        font-size: 14px;
+        color: #606060;
+        margin-top:10px
+    }
+}
+
+.input-email{
+    @extend %inputEmail;
+    margin-top: 10px;
+}
+.input-name{
+    @extend %inputName;
+}
+
+.button-singUp{
+    @extend %buttonInput;
+}
+.singUp-new{
+    @extend %loginNew
+}
+.singUp-news{
+    width: 325px;
+    height: 25px;
+    display: flex;
+    justify-content: center ;
+}

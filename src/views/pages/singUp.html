@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <!-- include head.html -->
+    @@include('../layouts/head.html', { "title": "Demo" })
+    <!-- include styles.html -->
+    @@include('../layouts/styles.html')
+  </head>
+
+  <body>
+  
+    <div class="singUp">
+        <div class="singUp-main">
+            <div class="singUp-left">
+                LOGO
+            </div>
+            <div class="singUp-right">
+                <div class="singUp-right_top">
+                    Start from scratch
+                </div>
+                <p>
+                    Create account to continue.
+                </p>
+                <div class="input">
+                    <div class="input-email">
+                        Email address
+                    </div>
+                    <input class="input-name">
+                    <div class="input-email">
+                        Email address
+                    </div>
+                    <input class="input-name">
+                    <div class="input-email">
+                        Email address
+                    </div>
+                    <input class="input-name">
+                </div>
+                <button class="button-singUp">Button Text</button>
+                <div class="singUp-new">
+                    <a href="./login.html">
+                        Already have an account?
+                    </a> </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- include scripts.html -->
+    @@include('../layouts/scripts.html')
+  </body>
+</html>
