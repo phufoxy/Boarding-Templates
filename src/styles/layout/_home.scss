@@ -1,0 +1,40 @@
+.main{
+    margin: 0 50px;
+}
+.main-text{
+     width: 484px;
+     height: 108px;
+     font-size: 39px;
+     color : #030F09;
+}
+.main-bottom{
+   font-size: 14px;
+   margin-top: 10px
+}  
+.button{
+    margin-top: 40px;
+    display : flex;
+}
+.main-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 239px;
+    height: 50px;
+    background-color: #30BE76;
+    border-radius: 8px;
+    margin-right: 15px;
+   a{
+       color: white;
+       font-size: 16px;
+   }
+}
+.main-button1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 239px;
+    height: 50px;
+    border: 2px solid #30BE76;
+    border-radius: 8px;
+}

@@ -2,19 +2,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
-  // font-size: 62.5%;
-  // max-width: 1400px;
 }
-// .wrapper{
-//   background-image: url(./../../img/background.jpeg);
-//   width: 100%;
-//   height: 860px;
-//   padding: 0 50px;
-// }
+.wrapper{
+  position: relative;
+  opacity: 0.99;
+}
+.wrapper::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 860px;
+  z-index: -1;
+  background: url(./../../img/background.jpeg) no-repeat 0 50%;
+  opacity: 0.25;
+}
 .navbar {
   opacity: 0;
   padding: 0px 1rem;
-  
+  padding-left: 75px;
 }
 
 .bg-custom {
@@ -26,9 +31,10 @@ body {
   opacity: 1;
   transform: translateY(0);
   height: 180px;
-  
 }
-
+.mr-auto{
+  font-size: 40px;
+}
 .navbar-brand {
   padding: 0;
 }
@@ -59,33 +65,7 @@ body {
   }
 }
 //
-.main{
- 
-  .main-text{
-    width: 484px;
-    height: 108px;
-    font-size: 30px;
-  }
-  .main-bottom{
-    font-size: 14px;
-  }
-}
 
-.button{
-  margin-top: 20px;
-}
-.main-button{
-  width: 239px;
-  height: 80px;
-  background-color: #30BE76;
-  border-radius: 10px;
-}
-.main-button1{
-  width: 239px;
-  height: 80px;
-  border: 2px solid #30BE76;
-  border-radius: 10px;
-}
 // Custom icon menu
 .navbar-toggler {
   padding: 0;

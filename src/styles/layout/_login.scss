@@ -1,0 +1,29 @@
+.login{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../img/login.jpeg);
+}
+
+.login-main{
+    display: flex;
+    width: 910px;
+    height: 570px;
+    background-color: rgb(245, 237, 237);
+}
+.login-left{
+    width: 455px;
+    height: 570px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    
+}
+.login-right_top{
+    margin-top: 70px;
+    font-size: 40px;
+}
