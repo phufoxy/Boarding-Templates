@@ -38,7 +38,7 @@
     font-size: 40px;
 }
 %loginRightTop{
-    margin-top: 70px;
+    margin-top: 60px;
     font-size: 24px;
     width: 400px;
     height: 32px;
@@ -77,7 +77,7 @@
 .login-left{
     @extend %loginLeft;
 }
-.login-right_top{
+.login-right-title{
     @extend %loginRightTop;
 }
 .login::before{
