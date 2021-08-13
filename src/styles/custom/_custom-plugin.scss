@@ -1,0 +1,57 @@
+$xl-min-width: 1200px;
+$xl-max-width: 1199px;
+$md-min-width: 992px;
+$md-max-width: 991px;
+$sm-min-width: 768px;
+$sm-max-width: 767px;
+$xs-min-width: 576px;
+$xs-max-width: 575px;
+$smx-max-width: 456px;
+$xmx-max-width: 320px;
+
+/* /////////// IMAGE ZOOM /////////// */
+@keyframes zoomInImage {
+  from {
+    transform: scale3d(1, 1, 1);
+    transition: 1s;
+  }
+
+  to {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: 1s;
+  }
+}
+
+.zoomInImage {
+  animation-name: zoomInImage;
+}
+
+.lg-video-cont {
+  width: 100% !important;
+  max-width: 90vw !important;
+}
+
+.extra-col {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-2-5 {
+  @extend .extra-col;
+  flex: 0 0 19.833333325%;
+  max-width: 19.833333325%;
+  @media (max-width: $md-min-width) {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  @media (max-width: $sm-max-width) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  @media (max-width: $smx-max-width) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
