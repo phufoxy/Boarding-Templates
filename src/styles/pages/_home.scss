@@ -1,13 +1,13 @@
 .main{
     margin: 0 50px;
 }
-.main-text{
+.text-title{
      width: 484px;
      height: 108px;
      font-size: 39px;
      color : #030F09;
 }
-.main-bottom{
+.text-description{
    font-size: 14px;
    margin-top: 10px
 }  
@@ -15,7 +15,8 @@
     margin-top: 40px;
     display : flex;
 }
-.main-button{
+.main-button-login{
+    border:none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +30,7 @@
        font-size: 16px;
    }
 }
-.main-button1{
+.main-button{
     display: flex;
     align-items: center;
     justify-content: center;

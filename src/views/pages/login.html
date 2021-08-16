@@ -8,16 +8,28 @@
   </head>
 
   <body>
-  
-      <!-- include header.html -->
-    
-       <!-- include main.html -->
-      @@include('../layouts/login.html')
-      
-      <!-- include footer.html -->
-      <!-- @@include('../layouts/footer.html') -->
-    
-    <!-- include scripts.html -->
+    <div class="login">
+      <div class="login-main">
+        <div class="login-left">LOGO</div>
+        <div class="login-right">
+          <div class="login-right-title">Welcome back!</div>
+          <p>Please login to continue</p>
+          <div class="input">
+            <div class="input-email">Email address</div>
+                <input class="input-name" />
+            <div class="input-w">
+              <div class="input-password">Email address</div>
+              <div class="input-forgot">Forgot password?</div>
+            </div>
+                <input class="input-name" />
+          </div>
+          <button class="button-input">Button Text</button>
+          <div class="login-news">
+            <a class="login-new" href="./signUp.html">New to Scratch?</a>
+          </div>
+        </div>
+      </div>
+    </div>
     @@include('../layouts/scripts.html')
   </body>
 </html>

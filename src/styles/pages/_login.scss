@@ -12,7 +12,7 @@
     font-size: 14px;
     color: #A8A8A8;
 }
-.login{
+%login{
     position: relative;
     opacity: 0.99;
     display: flex;
@@ -20,25 +20,15 @@
     justify-content: center;
     width: 1440px;
     height: 900px;
-  }
-  .login::before{
-    content: "";
-    position: absolute;
-    width: 1440px;
-    height: 900px;
-    z-index: -1;
-    background: url(../../img/login.jpeg) no-repeat 0 50%;
-    opacity: 0.6;
-    background-size: 100%;
 }
-.login-main{
+%loginMain{
     display: flex;
     width: 910px;
     height: 570px;
     background-color: white;
     border-radius: 8px;
 }
-.login-left{
+%loginLeft{
     width: 455px;
     height: 570px;
     color: rgb(0, 0, 0);
@@ -47,13 +37,59 @@
     justify-content: center;
     font-size: 40px;
 }
-.login-right_top{
-    margin-top: 70px;
+%loginRightTop{
+    margin-top: 60px;
     font-size: 24px;
-    width: 200px;
+    width: 400px;
     height: 32px;
     color: #030F09;
     font-weight: 600;
+}
+%buttonInput{
+    width: 325px;
+    height: 50px;
+    background-color: #30BE76;
+    border-radius: 8px;
+    margin: 50px 0px 30px 0px;
+    border: none;
+    color: white;
+}
+%loginNew{
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #A8A8A8;
+    letter-spacing: 0;
+    line-height: 22px;
+    cursor: pointer;
+}
+.login-news{
+    width: 325px;
+    height: 25px;
+    display: flex;
+    justify-content: center ;
+}
+.login{
+    @extend %login;
+}
+.login-main{
+    @extend %loginMain;
+}
+.login-left{
+    @extend %loginLeft;
+}
+.login-right-title{
+    @extend %loginRightTop;
+}
+.login::before{
+    content: "";
+    position: absolute;
+    width: 1440px;
+    height: 900px;
+    z-index: -1;
+    background: url(../../img/login.jpeg) no-repeat 0 50%;
+    opacity: 0.6;
+    background-size: 100%;
+    
 }
 .login-right{
     margin-left: 50px;
@@ -62,6 +98,7 @@
         height: 22px;
         font-size: 14px;
         color: #606060;
+        margin-top:10px;
     }
 }
 .input{
@@ -77,6 +114,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
+    width: 325px;
 }
 .input-password{
     @extend %inputEmail;
@@ -89,20 +127,8 @@
     cursor: pointer;
 }
 .button-input{
-    width: 325px;
-    height: 50px;
-    background-color: #30BE76;
-    border-radius: 8px;
-    margin: 50px 0px 30px 0px;
-    border: none;
-    color: white;
+    @extend %buttonInput;
 }
 .login-new{
-    font-family: Helvetica;
-    font-size: 14px;
-    color: #A8A8A8;
-    letter-spacing: 0;
-    text-align: center;
-    line-height: 22px;
-    cursor: pointer;
+    @extend %loginNew
 }
