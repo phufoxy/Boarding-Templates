@@ -1,0 +1,542 @@
+.feed__container {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  margin: 50px 50px
+    /* grid-template-rows: 100px 100px; */
+}
+
+.feed__container>div {
+
+  margin: 10px;
+}
+
+.feed__left {
+  grid-column: 1/2;
+
+}
+
+.feed__profile {
+  width: 100%;
+  height: 215px;
+  background-color: white;
+
+}
+
+.profile-top {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  border-radius: 8px;
+  padding: 15px 20px;
+}
+
+.feed__profile--avt {
+  width: 100%;
+  height: auto;
+  grid-column: 1/2;
+}
+
+.profile-right {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  height: 30px;
+  grid-column: 2/3;
+  margin-left: 15px;
+}
+
+.feed__profile--name {
+  width: 100%;
+  height: 25px;
+  grid-column: 1/3;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.feed__profile--title {
+  width: 100%;
+  height: 25px;
+  grid-column: 1/3;
+  font-size: 14px;
+  color: #606060;
+}
+
+.feed__profile--follower {
+  width: 100%;
+  height: 25px;
+  grid-column: 1/2;
+  font-size: 14px;
+  color: #606060;
+}
+
+.feed__profile--like {
+  width: 100%;
+  height: 25px;
+  grid-column: 2/3;
+  font-size: 14px;
+  color: #606060;
+}
+
+.profile-bottom {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 15px;
+  border-top: 1px solid #E6E6E6;
+  padding: 20px;
+}
+
+.profile__bottom--Recipes {
+  grid-column: 1/2;
+  position: relative;
+
+  div:first-child {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+
+  div:last-child {
+    margin-top: 25px;
+  }
+}
+
+.profile__bottom--Saved {
+  grid-column: 2/3;
+  position: relative;
+
+  div:first-child {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+
+  div:last-child {
+    margin-top: 25px;
+  }
+}
+
+.profile__bottom--Following {
+  grid-column: 3/4;
+  position: relative;
+
+  div:first-child {
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+
+  div:last-child {
+    margin-top: 25px;
+  }
+}
+
+.feed__menu {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  margin-top: 50px;
+  padding: 15px;
+
+  div {
+    margin-left: 10px;
+    width: 100%;
+    height: 25px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  ul li {
+    width: 100%;
+    height: 22px;
+    font-size: 14px;
+    color: #606060;
+    margin: 10px;
+  }
+}
+
+
+.feed__main {
+  grid-column: 2/3;
+}
+
+.feed-header {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.feed__header--input {
+  width: 195px;
+  height: 22px;
+  border: 1px solid #767676;
+
+}
+
+.feed__header--btn {
+  width: 128px;
+  height: 36px;
+  background-color: #30BE76;
+  border-radius: 8px;
+  color: white;
+  border: none;
+}
+
+.feed-posts {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 8px;
+  padding-top: 5px;
+  margin-top: 15px;
+}
+
+.feed__card {
+  height: 400px;
+  border-radius: 8px;
+  margin: 15px;
+  background-color: white;
+  box-shadow: 0 0 5px 2px #b9b9b9
+}
+
+.card-top {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.card__top-avt {
+  grid-column: 1/2;
+  width: 100%;
+}
+
+.card__top-name {
+  grid-column: 2/3;
+  width: 100%;
+  margin-left: 15px;
+
+  h1 {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 12px;
+    color: #606060;
+  }
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+}
+
+.card-bottom {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: flex-end;
+  position: relative;
+  padding: 0px 10px;
+
+}
+
+.card__bottom--title {
+  grid-column: 1/2;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.card__bottom--icon {
+  grid-column: 2/3;
+  position: absolute;
+  right: 0%;
+  color: #606060 !important;
+  margin-top: 10px;
+}
+
+.card__bottom--description {
+  grid-column: 1/3;
+  font-size: 14px;
+  color: #A8A8A8;
+  margin-top: 10px;
+}
+
+.card__bottom--Interactive {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.card__bottom--like {
+  grid-column: 1/2;
+  font-size: 14px;
+  color: #606060;
+  margin-top: 10px;
+}
+
+.card__bottom--comment {
+  grid-column: 2/3;
+  font-size: 14px;
+  color: #606060;
+  margin-top: 10px;
+}
+
+.card__buttom--save {
+  width: 73px;
+  height: 26px;
+  border: 1px solid #30BE76;
+  color: #30BE76;
+  background-color: white;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+
+
+.feed-card-main {
+  position: relative;
+  opacity: 0.99;
+}
+
+.feed-modal {
+  width: 286px;
+  height: 254px;
+  background-color: white;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+
+  ul li {
+    font-size: 14px;
+    color: #030F09;
+    margin: 15px;
+    width: 100%-15;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+  }
+
+  ul li:last-child {
+    background-color: #30BE76;
+    border-radius: 8px;
+  }
+}
+
+
+.card-main {
+  opacity: 0.5;
+  background-color: rgb(54, 53, 53);
+}
+
+.feed__modal--title {
+  font-size: 20px;
+  font-weight: 700;
+  width: 150px;
+  margin: 15px;
+}
+
+.feed__modal--icon {
+  width: 24px;
+  height: auto;
+  margin: 15px;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+}
+
+.feed__modal--button {
+  border: none;
+  color: #30BE76;
+  margin-left: 15px;
+  background-color: white;
+}
+
+// 
+.feed-follow {
+  margin: 30px 0;
+  height: 350px;
+  border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.feed__follow--title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%-5;
+  height: 22px;
+  line-height: 22px;
+  margin: 15px;
+
+  div {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  button {
+    color: #30BE76;
+    border: none;
+    background-color: white;
+  }
+}
+
+.feed-card-follow {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  width: 100%
+}
+
+.card-follow-one {
+  grid-column: 1/2;
+
+}
+
+.card-follow {
+  width: 100% -5;
+  height: 250px;
+  position: relative;
+  margin: 5px;
+  box-shadow: 0 0 5px 2px #b9b9b9
+}
+
+.card__follow--background {
+  width: 100%;
+  height: 110px;
+}
+
+.card__follow--avt {
+  position: absolute;
+  width: 80px;
+  height: auto;
+  background-color: white;
+  top: 45%;
+  left: 50%;
+  border-radius: 99999px;
+  transform: translate(-50%, -50%);
+}
+
+.card__follow--name {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.card-follow-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.card__follow--save {
+  width: 80px;
+  height: 22px;
+  font-size: 14px;
+  color: #A8A8A8;
+}
+
+.card__follow--number {
+  width: 30px;
+  height: 22px;
+  font-size: 14px;
+}
+
+.card__follow--btn {
+  width: 100%;
+  height: 22px;
+  border: none;
+  background-color: white;
+  color: #4e4e4e;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.card-follow-two {
+  grid-column: 2/3;
+}
+
+.card-follow-three {
+  grid-column: 3/4;
+
+}
+
+// 
+.feed__right {
+  grid-column: 3/4;
+}
+
+.feed__right--live {
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+
+  div {
+    font-size: 16;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  img {
+    width: 100%;
+    height: 152px;
+    border-radius: 8px;
+  }
+}
+
+.feed__right--contact {
+  width: 100%;
+  height: 113px;
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 15px;
+
+  h2 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  div img {
+
+    margin: 10px 10px;
+    width: 40px;
+    height: auto;
+  }
+}
+
+.feed__right--footer {
+  width: 100%;
+  height: 103px;
+  background-color: white;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 15px;
+
+  div {
+    display: flex;
+    font-size: 14px;
+    color: #767676;
+    margin: 10px;
+  }
+
+  div:last-child {
+    grid-column: 1/4;
+    font-size: 12px;
+  }
+}
