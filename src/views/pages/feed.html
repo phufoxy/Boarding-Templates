@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <!-- include head.html -->
+  @@include('../layouts/head.html', { "title": "Demo" })
+  <!-- include styles.html -->
+  @@include('../layouts/styles.html')
+</head>
+
+<body>
+  <!-- include header.html -->
+  @@include('../layouts/header.html')
+  <!-- include main.html -->
+  <main class="feed">
+    <div class="feed__container">
+      <!-- main-left -->
+      <div class="feed__left">
+        <div class="feed__profile">
+          <div class="profile-top">
+            <img class="feed__profile--avt" src="../../img/user-male-circle.png" />
+            <div class="profile-right">
+                <h2 class="feed__profile--name">
+                  Nick Evans
+                </h2>
+                <div class="feed__profile--title">
+                  Potato Master
+                </div>
+                <div class="feed__profile--follower">
+                  580 followers
+                </div>
+                <div class="feed__profile--like">
+                  23k likes
+                </div>
+            </div>
+          </div>
+          <div class="profile-bottom">
+            <div class="profile__bottom--recipes">
+              <div>20</div>
+              <div>Recipes</div>
+            </div>
+            <div class="profile__bottom--raved">
+              <div> 75</div>
+              <div>Saved</div>
+            </div>
+            <div class="profile__bottom--following">
+              <div>248</div>
+              <div>Following</div>
+            </div>
+          </div>
+        </div>
+        <div class="feed__menu">
+          <h2>Top 5 Recipe today</h2>
+          <ul>
+            <li>Tea-Smoked Creamy Chicken</li>
+            <li>Pickled Savory Tortilla</li>
+            <li>Stuffed Basil & Mint Salmon</li>
+            <li>Strawberry jelly</li>
+            <li>Cinnamon and Lime Toffee</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Main-->
+      <div class="feed__main">
+        <div class="feed-header">
+          <input class="feed__header--input" />
+          <button class="feed__header--btn">Button Text</button>
+        </div>
+        <div class="feed-posts">
+          <div class="feed__card">
+            <div class="feed__card--top">
+              <div class="card__top-avt">
+                <img src="../../img/user-male-circle-50.png" />
+              </div>
+              <div class="card__top-name">
+                <h1>Profile Name</h1>
+                <p>To serve, drizzle raspberry preserves over each waffle, and top with raspbrries. if whipped cream to
+                  each waffle.</p>
+              </div>
+            </div>
+            <div>
+              <img class="card-img" src="../../img/feed-follow-01.jpeg" alt="">
+            </div>
+            <div class="card-bottom">
+              <div class="card__bottom--title">Red Wine and Mint Soufflé</div>
+              <img class="card__bottom--icon"
+                src="../../img/filled-like-24.png" />
+              <div class="card__bottom--description">Apparently we had reached a great height in the atmosphere, for the
+                sky was</div>
+              <div class="card__bottom--Interactive">
+                <div class="card__bottom--like"> 32 like </div>
+                <div class="card__bottom--comment">8 comment</div>
+              </div>
+              <button class="card__buttom--save">+ Save</button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="feed-card-main">
+            <div class="feed__card card-main">
+              <div class="feed__card--top">
+                <div class="card__top-avt">
+                  <img src="../../img/user-male-circle-50.png" />
+                </div>
+                <div class="card__top-name">
+                  <h1>Profile Name</h1>
+                  <p>To serve, drizzle raspberry preserves over each waffle, and top with raspbrries. if whipped cream
+                    to
+                    each waffle.</p>
+                </div>
+              </div>
+              <div>
+                <img class="card-img" src="../../img/feed-card.jpg" alt="strawberry photo">
+              </div>
+              <div class="card-bottom">
+                <div class="card__bottom--title">Red Wine and Mint Soufflé</div>
+                <img class="card__bottom--icon"
+                  src="../../img/filled-like-24.png" />
+                <div class="card__bottom--description">Apparently we had reached a great height in the atmosphere, for
+                  the
+                  sky was</div>
+                <div class="card__bottom--Interactive">
+                  <div class="card__bottom--like"> 32 like </div>
+                  <div class="card__bottom--comment">8 comment</div>
+                </div>
+                <button class="card__buttom--save">+ Save</button>
+              </div>
+            </div>
+            <div class="feed-modal">
+              <div class="feed__modal--title">Modal Title</div>
+              <img class="feed__modal--icon" src="../../img/delete-sign--v1-50.png" />
+              <ul>
+                <li>Western</li>
+                <li>Quick Lunch</li>
+                <li>Vegies</li>
+              </ul>
+              <button class="feed__modal--button">+ Add New Cookbook</button>
+            </div>
+          </div>
+          <!--  -->
+          <div class="feed-follow">
+            <div class="feed__follow--title">
+              <div>People you might want to follow</div>
+              <button>see all Suggestion</button>
+            </div>
+            <div class="feed-card-follow">
+              <div class="card-follow card-follow-one">
+                <img class="card__follow--background" src="../../img/feed-follow-01.jpeg" alt="strawberry photo">
+                <img class="card__follow--avt" src="../../img/user-male-circle.png" />
+                <div class="card__follow--name">followers can see</div>
+                <div class="card-follow-bottom">
+                  <div class="card__follow--save">Save to</div>
+                  <div class="card__follow--number">8k</div>
+                </div>
+                <button class="card__follow--btn">Create account</button>
+              </div>
+              <div class="card-follow card-follow-two">
+                <img class="card__follow--background" src="../../img/feed-follow-02.jpeg" alt="salad photo">
+                <img class="card__follow--avt" src="../../img/user-male-circle.png" />
+                <div class="card__follow--name">followers can see</div>
+                <div class="card-follow-bottom">
+                  <div class="card__follow--save">Save to</div>
+                  <div class="card__follow--number">8k</div>
+                </div>
+                <button class="card__follow--btn">Create account</button>
+              </div>
+              <div class="card-follow card-follow-three">
+                <img class="card__follow--background" src="../../img/feed-follow-03.jpeg" alt="hamburger photo">
+                <img class="card__follow--avt" src="../../img/user-male-circle.png" />
+                <div class="card__follow--name">followers can see</div>
+                <div class="card-follow-bottom">
+                  <div class="card__follow--save">Save to</div>
+                  <div class="card__follow--number">8k</div>
+                </div>
+                <button class="card__follow--btn">Create account</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Main-Right -->
+      <div class="feed__right">
+        <div class="feed__right--live">
+          <div>Live cooking by scratch</div>
+          <img src="../../img/feed-follow-03.jpeg" alt="">
+        </div>
+        <div class="feed__right--contact">
+          <h2>Most Active Today</h2>
+          <div>
+            <img src="../../img/user-male-circle-50.png" />
+            <img src="../../img/user-male-circle-50.png" />
+            <img src="../../img/user-male-circle-50.png" />
+            <img src="../../img/user-male-circle-50.png" />
+            <img src="../../img/user-male-circle-50.png" />
+          </div>
+        </div>
+        <div class="feed__right--footer">
+          <div>About scratch </div>
+          <div>Help Center</div>
+          <div>Privacy Policy</div>
+          <div>scratch by invision 2019</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- include footer.html -->
+  <!-- @@include('../layouts/footer.html') -->
+
+  <!-- include scripts.html -->
+  @@include('../layouts/scripts.html')
+</body>
+
+</html>
