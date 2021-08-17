@@ -4,15 +4,17 @@
   margin: 50px 50px
     /* grid-template-rows: 100px 100px; */
 }
-
+.feed{
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+}
 .feed__container>div {
-
   margin: 10px;
 }
 
 .feed__left {
   grid-column: 1/2;
-
 }
 
 .feed__profile {
@@ -33,11 +35,12 @@
   width: 100%;
   height: auto;
   grid-column: 1/2;
+  border-radius: 100%;
 }
 
 .profile-right {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   width: 100%;
   height: 30px;
   grid-column: 2/3;
@@ -47,7 +50,7 @@
 .feed__profile--name {
   width: 100%;
   height: 25px;
-  grid-column: 1/3;
+  grid-column: 1/4;
   font-weight: 600;
   font-size: 16px;
 }
@@ -55,7 +58,7 @@
 .feed__profile--title {
   width: 100%;
   height: 25px;
-  grid-column: 1/3;
+  grid-column: 1/4;
   font-size: 14px;
   color: #606060;
 }
@@ -67,11 +70,10 @@
   font-size: 14px;
   color: #606060;
 }
-
 .feed__profile--like {
   width: 100%;
   height: 25px;
-  grid-column: 2/3;
+  grid-column: 3/4;
   font-size: 14px;
   color: #606060;
 }
@@ -84,7 +86,7 @@
   padding: 20px;
 }
 
-.profile__bottom--Recipes {
+.profile__bottom--recipes {
   grid-column: 1/2;
   position: relative;
 
@@ -100,7 +102,7 @@
   }
 }
 
-.profile__bottom--Saved {
+.profile__bottom--saved {
   grid-column: 2/3;
   position: relative;
 
@@ -116,7 +118,7 @@
   }
 }
 
-.profile__bottom--Following {
+.profile__bottom--following {
   grid-column: 3/4;
   position: relative;
 
@@ -175,8 +177,7 @@
 .feed__header--input {
   width: 195px;
   height: 22px;
-  border: 1px solid #767676;
-
+  border: none;
 }
 
 .feed__header--btn {
@@ -202,19 +203,22 @@
   border-radius: 8px;
   margin: 15px;
   background-color: white;
-  box-shadow: 0 0 5px 2px #b9b9b9
+  box-shadow: 0 6px 20px 0 rgba(13,51,32,0.10);
 }
 
 .feed__card--top {
   width: 100%;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 10% 90%;
   padding: 10px;
 }
 
 .card__top-avt {
   grid-column: 1/2;
+  grid-row: 1/2;
   width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
 
 .card__top-name {
@@ -407,7 +411,7 @@
   height: 250px;
   position: relative;
   margin: 5px;
-  box-shadow: 0 0 5px 2px #b9b9b9
+  box-shadow: 0 6px 20px 0 rgba(13,51,32,0.10);
 }
 
 .card__follow--background {
@@ -442,6 +446,7 @@
   height: 22px;
   font-size: 14px;
   color: #A8A8A8;
+  margin-left: 15px;
 }
 
 .card__follow--number {
@@ -511,7 +516,7 @@
   }
 
   div img {
-
+    border-radius: 50%;
     margin: 10px 10px;
     width: 40px;
     height: auto;
