@@ -43,13 +43,13 @@
     <div>4 pieces 1/2-inch thick pieces brioche</div>
   </div>
   <div class="search">
-    <img class="search__icon" src="https://img.icons8.com/ios/50/000000/search--v1.png" />
+    <img class="search__icon" src="../../img/search--v1-50.png" />
     <input class="search__input" placeholder="Search Recipe Profile, or Ingredients" />
   </div>
   <div class="narbar__right">
-    <img class="narbar__right--notification" src="https://img.icons8.com/ios/50/000000/appointment-reminders--v1.png" />
-    <img class="narbar__right--mailbox" src="https://img.icons8.com/ios/50/000000/mail.png" />
-    <img class="narbar__right--avt" src="https://img.icons8.com/ios/50/000000/user-male-circle.png" />
+    <img class="narbar__right--notification" src="../../img/appointment-reminders--v1-50.png" />
+    <img class="narbar__right--mailbox" src="../../img/mail-50.png" />
+    <img class="narbar__right--avt" src="../../img/avt-01.jpeg" />
   </div>
 </nav>
   <!-- include main.html -->
@@ -59,33 +59,36 @@
       <div class="feed__left">
         <div class="feed__profile">
           <div class="profile-top">
-            <img class="feed__profile--avt" src="../../img/user-male-circle.png" />
+            <img class="feed__profile--avt" src="../../img/avt-01.jpeg" />
             <div class="profile-right">
-                <h2 class="feed__profile--name">
-                  Nick Evans
-                </h2>
-                <div class="feed__profile--title">
-                  Potato Master
-                </div>
-                <div class="feed__profile--follower">
-                  580 followers
-                </div>
-                <div class="feed__profile--like">
-                  23k likes
-                </div>
+              <h2 class="feed__profile--name">
+                Nick Evans
+              </h2>
+              <div class="feed__profile--title">
+                Potato Master
+              </div>
+              <div class="feed__profile--follower">
+                580 followers
+              </div>
+              <div class="feed__profile--dots">
+                <div></div>
+              </div>
+              <div class="feed__profile--like">
+                23k likes
+              </div>
             </div>
           </div>
           <div class="profile-bottom">
             <div class="profile__bottom--recipes">
-              <div>20</div>
+              <h2>20</h2>
               <div>Recipes</div>
             </div>
-            <div class="profile__bottom--raved">
-              <div> 75</div>
+            <div class="profile__bottom--saved">
+              <h2> 75</h2>
               <div>Saved</div>
             </div>
             <div class="profile__bottom--following">
-              <div>248</div>
+              <h2>248</h2>
               <div>Following</div>
             </div>
           </div>
@@ -104,18 +107,18 @@
       <!-- Main-->
       <div class="feed__main">
         <div class="feed-header">
-          <input class="feed__header--input" />
+          <input class="feed__header--input" placeholder="user@email.com" />
           <button class="feed__header--btn">Button Text</button>
         </div>
         <div class="feed-posts">
           <div class="feed__card">
             <div class="feed__card--top">
               <div class="card__top-avt">
-                <img src="../../img/user-male-circle-50.png" />
+                <img class="card__top-avt" src="../../img/avt-01.jpeg" />
               </div>
               <div class="card__top-name">
                 <h1>Profile Name</h1>
-                <p>To serve, drizzle raspberry preserves over each waffle, and top with raspbrries. if whipped cream to
+                <p>To serve, drizzle raspberry preserves over each waffle, and top with rasy. if whipped cream to
                   each waffle.</p>
               </div>
             </div>
@@ -124,8 +127,7 @@
             </div>
             <div class="card-bottom">
               <div class="card__bottom--title">Red Wine and Mint Soufflé</div>
-              <img class="card__bottom--icon"
-                src="../../img/filled-like-24.png" />
+              <img class="card__bottom--icon" src="../../img/filled-like-24.png" />
               <div class="card__bottom--description">Apparently we had reached a great height in the atmosphere, for the
                 sky was</div>
               <div class="card__bottom--Interactive">
@@ -139,14 +141,13 @@
           <div class="feed-card-main">
             <div class="feed__card card-main">
               <div class="feed__card--top">
-                <div class="card__top-avt">
-                  <img src="../../img/user-male-circle-50.png" />
+                <div>
+                  <img class="card__top-avt" src="../../img/avt-01.jpeg" />
                 </div>
                 <div class="card__top-name">
                   <h1>Profile Name</h1>
-                  <p>To serve, drizzle raspberry preserves over each waffle, and top with raspbrries. if whipped cream
-                    to
-                    each waffle.</p>
+                  <p>To serve, drizzle raspberry preserves over each waffle, and top with raspbrries . if whipped cream
+                    to each waffle.</p>
                 </div>
               </div>
               <div>
@@ -154,8 +155,7 @@
               </div>
               <div class="card-bottom">
                 <div class="card__bottom--title">Red Wine and Mint Soufflé</div>
-                <img class="card__bottom--icon"
-                  src="../../img/filled-like-24.png" />
+                <img class="card__bottom--icon" src="../../img/filled-like-24.png" />
                 <div class="card__bottom--description">Apparently we had reached a great height in the atmosphere, for
                   the
                   sky was</div>
@@ -172,7 +172,7 @@
               <ul>
                 <li>Western</li>
                 <li>Quick Lunch</li>
-                <li>Vegies</li>
+                <li class="feed__modal--Veggies">Veggies</li>
               </ul>
               <button class="feed__modal--button">+ Add New Cookbook</button>
             </div>
@@ -186,7 +186,7 @@
             <div class="feed-card-follow">
               <div class="card-follow card-follow-one">
                 <img class="card__follow--background" src="../../img/feed-follow-01.jpeg" alt="strawberry photo">
-                <img class="card__follow--avt" src="../../img/user-male-circle.png" />
+                <img class="card__follow--avt" src="../../img/avt-02.jpeg" />
                 <div class="card__follow--name">followers can see</div>
                 <div class="card-follow-bottom">
                   <div class="card__follow--save">Save to</div>
@@ -196,7 +196,7 @@
               </div>
               <div class="card-follow card-follow-two">
                 <img class="card__follow--background" src="../../img/feed-follow-02.jpeg" alt="salad photo">
-                <img class="card__follow--avt" src="../../img/user-male-circle.png" />
+                <img class="card__follow--avt" src="../../img/avt-03.jpeg" />
                 <div class="card__follow--name">followers can see</div>
                 <div class="card-follow-bottom">
                   <div class="card__follow--save">Save to</div>
@@ -206,7 +206,7 @@
               </div>
               <div class="card-follow card-follow-three">
                 <img class="card__follow--background" src="../../img/feed-follow-03.jpeg" alt="hamburger photo">
-                <img class="card__follow--avt" src="../../img/user-male-circle.png" />
+                <img class="card__follow--avt" src="../../img/avt-01.jpeg" />
                 <div class="card__follow--name">followers can see</div>
                 <div class="card-follow-bottom">
                   <div class="card__follow--save">Save to</div>
@@ -226,19 +226,19 @@
         </div>
         <div class="feed__right--contact">
           <h2>Most Active Today</h2>
-          <div>
-            <img src="../../img/user-male-circle-50.png" />
-            <img src="../../img/user-male-circle-50.png" />
-            <img src="../../img/user-male-circle-50.png" />
-            <img src="../../img/user-male-circle-50.png" />
-            <img src="../../img/user-male-circle-50.png" />
+          <div class="feed__right--avt">
+            <img class="feed__right-avt--one" src="../../img/avt-01.jpeg" />
+            <img class="feed__right-avt--two" src="../../img/avt-02.jpeg" />
+            <img class="feed__right-avt--three" src="../../img/avt-03.jpeg" />
+            <img class="feed__right-avt--four" src="../../img/avt-01.jpeg" />
+            <img class="feed__right-avt--five" src="../../img/avt-02.jpeg" />
           </div>
         </div>
         <div class="feed__right--footer">
           <div>About scratch </div>
           <div>Help Center</div>
           <div>Privacy Policy</div>
-          <div>scratch by invision 2019</div>
+          <div>@ scratch by invision 2019</div>
         </div>
       </div>
     </div>
